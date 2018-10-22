@@ -1,0 +1,20 @@
+{
+  "name": "website-backend-api",
+  "version": "0.0.0",
+  "description": "This is the indie-tea backend. Plan is to use node, express, and claudia to deploy to aws lambda / api gateway. Following along the book Serverless Applications w Node js.",
+  "main": "api.js",
+  "dependencies": {
+    "claudia-api-builder": "^4.1.1",
+    "claudia-bot-builder": "^4.5.0"
+  },
+  "devDependencies": {
+    "claudia": "^5.1.2"
+  },
+  "scripts": {
+    "create": "claudia create --region us-east-1 --api-module api",
+    "update": "claudia update",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jimmy Fan Zhang",
+  "license": "MIT"
+}
