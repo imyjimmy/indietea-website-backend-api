@@ -4,6 +4,7 @@
   "description": "This is the indie-tea backend. Plan is to use node, express, and claudia to deploy to aws lambda / api gateway. Following along the book Serverless Applications w Node js.",
   "main": "api.js",
   "dependencies": {
+    "aws-sdk": "^2.340.0",
     "claudia-api-builder": "^4.1.1",
     "claudia-bot-builder": "^4.5.0"
   },

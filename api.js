@@ -31,7 +31,13 @@ api.get('/teas', () => {
   return getTeas()
 })
 
+const createOrder = require('./handlers/create_order')
 
-
+api.post('/order', (request) => {
+  return createOrder(request.body)
+}, { 
+  success: 201, 
+  error: 400
+})
 
 module.exports = api
