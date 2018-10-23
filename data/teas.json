@@ -1,0 +1,36 @@
+[
+  {
+    "id" : "1",
+    "name" : "Black",
+    "attr1" : "stuff",
+    "attr2" : ["other", "stuff"],
+    "attr3" : {
+                "nested" : "hello",
+                "nested2" : "world"
+              }
+  },
+  {
+    "id" : "2",
+    "name" : "Dark"
+  },
+  {
+    "id" : "3",
+    "name" : "Oolong"
+  },
+  {
+    "id" : "4",
+    "name" : "Green"
+  },
+  {
+    "id" : "5",
+    "name" : "White"
+  },
+  {
+    "id" : "6",
+    "name" : "Puer"
+  },
+  {
+    "id" : "7",
+    "name" : "Yellow"
+  }
+]
