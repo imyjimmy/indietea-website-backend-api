@@ -1,9 +1,21 @@
-curl -i -H "Content-Type: application/json" -X POST -d '{}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
-
-# correct
+# POST
+  # correct
 
 curl -i -H "Content-Type: application/json" -X POST -d '{"id":1, "address": "123 Baker St"}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
 
-# error
+  # error
 
 curl -i -H "Content-Type: application/json" -X POST -d '{}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
+
+# PUT
+  # correct
+curl -i -H "Content-Type: application/json" -X PUT -d '{"id": 2, "address": "359 Beacon"}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order/2
+
+  # error
+curl -i -H "Content-Type: application/json" -X PUT -d '{}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order/3
+
+# DELETE
+  # correct
+curl -i -H "Content-Type: application/json" -X DELETE https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order/2
+  # error
+curl -i -H "Content-Type: application/json" -X DELETE https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
