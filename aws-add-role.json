@@ -1,0 +1,4 @@
+/* 
+  Add a policy to the Lambda role to allow it to communicate with DyanmoDB tables
+*/
+aws iam put-role-policy --role-name website-backend-api-executor --policy-name DynamoDB-RW --policy-document file://./roles/dynamodb.json

@@ -3,6 +3,9 @@
 
 curl -i -H "Content-Type: application/json" -X POST -d '{"id":1, "address": "123 Baker St"}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
 
+  # Ch 3.3
+  curl -i -H "Content-Type: application/json" -X POST -d '{"tea":1, "address": "123 Baker St"}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
+
   # error
 
 curl -i -H "Content-Type: application/json" -X POST -d '{}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
