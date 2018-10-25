@@ -2,6 +2,8 @@
 const AWS = require('aws-sdk')
 const docClient = new AWS.DynamoDB.DocumentClient()
 
+const uuid = require('uuid')
+
 function createOrder(order) {
   if (!order || !order.tea || !order.address) {
     throw new Error("Please provide a tea and/or an address.")
@@ -10,7 +12,7 @@ function createOrder(order) {
   return docClient.put({
     TableName: 'customer-orders',
     Item: {
-      orderId: 'some-id',
+      orderId: uuid(),
       tea: order.tea,
       address: order.address,
       orderStatus: 'pending'
