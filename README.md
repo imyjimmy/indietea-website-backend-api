@@ -24,3 +24,6 @@ DB Service | Table Name | Attribute Name | Attribute Type | Key Schema | Key Typ
 DynamoDB | customer-orders | orderId | String | orderId | Hash
 etc
 
+Scan Table:
+
+`aws dynamodb scan --table-name ${table-name} --region us-east-1 --output json`
