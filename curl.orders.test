@@ -22,3 +22,8 @@ curl -i -H "Content-Type: application/json" -X PUT -d '{}' https://pt7783gg77.ex
 curl -i -H "Content-Type: application/json" -X DELETE https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order/2
   # error
 curl -i -H "Content-Type: application/json" -X DELETE https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/order
+
+
+# GET
+
+curl -i -H "Content-Type: application/json" -X GET -d '{}' https://pt7783gg77.execute-api.us-east-1.amazonaws.com/latest/getOrders

@@ -13,6 +13,7 @@ const baseResp = require('./handlers/get_base') // should it be called getBase?
 const createOrder = require('./handlers/create_order')
 const modifyOrder = require('./handlers/put_order')
 const deleteOrder = require('./handlers/delete_order')
+const { getOrders, getOrder } = require('./handlers/get_order')
 
 
 const server_resp = { success: 201, error: 400 }
@@ -35,6 +36,14 @@ api.get('/teas/{id}', (request) => {
 
 api.get('/teas', () => {
   return getTeas()
+})
+
+api.get('/getOrder/{id}', (request) => {
+  return getOrder(request.pathParams.id)
+})
+
+api.get('/getOrders', (request) => {
+  return getOrders()
 })
 
 api.post('/order', (request) => {
